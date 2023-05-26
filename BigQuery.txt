@@ -1,0 +1,72 @@
+BigQuerry
+
+DWH--Cloud data ware house
+--Historical data(OLAP)
+summerized and finalized
+de-normalized data(not normalized)
+normalization--PK--duplicate---IUD(unique records)
+---structured data
+dataset --tables--views
+SQL---Google SQL
+
+why BigQuery (Features of Bigquery)
+1)Fully managed by google
+2)Peta bites of data in minutes
+  Tera bites of data in seconds
+3) Cost effictive
+4) Auto scalable---storage(H)/processing(V)
+5) High availability
+
+1GB --CSV File with 100 columns
+rows--- 10 MillionsXGBX1024X1024 TB---PB
+
+Dremel Architecture:--->
+a)Root server
+b)Mixxers (nodes /system /vm)
+c)leaf nodes(sub nodes)
+d)Jupiter
+e)colossues( storage area of big query)
+
+how many ways we can access BigQuery
+--SDK
+---Console
+---Cloud Shell
+--bq shell
+--Client Lirary
+
+create table database_name.table_name(
+id int,
+name varchar(10),
+
+
+MySQL			BigQuery
+int 			integer/int64/int
+long			small/bigint/tinyint
+varchar(10)		string
+char
+decimal			numeric
+float			float64
+date			date,datetime,timestamp()
+boolean			boolean
+				byte
+				array
+				struct,json
+				geography
+				
+			Constraints:Modes
+			not null---required
+					---Nullable
+						repeate
+						
+what kind of file format BigQuery will support
+
+1)CSV/PSV/TSV
+2JSON
+3AVRO
+4PARQUET
+5ORC
+
+
+Project name
+	dataset
+		table/views
